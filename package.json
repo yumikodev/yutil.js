@@ -1,5 +1,5 @@
 {
-  "name": "clover.js",
+  "name": "cloverly",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,10 +9,10 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yumiko0828/Clover.js.git"
+    "url": "git+https://github.com/Yumiko0828/Cloverly.git"
   },
   "keywords": [
-    "clover.js",
+    "cloverly",
     "simple",
     "utils",
     "format",
@@ -26,7 +26,7 @@
   "author": "Yasu Yumiko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Yumiko0828/Clover.js/issues"
+    "url": "https://github.com/Yumiko0828/Cloverly/issues"
   },
-  "homepage": "https://github.com/Yumiko0828/Clover.js#readme"
+  "homepage": "https://github.com/Yumiko0828/Cloverly#readme"
 }

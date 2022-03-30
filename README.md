@@ -1,27 +1,27 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://www.npmjs.com/package/aplos"><img src="./docs/clover.js.png" width="546" alt="clover.js" /></a>
+    <a href="https://www.npmjs.com/package/aplos"><img src="./docs/cloverly.png" width="546" alt="cloverly" /></a>
   </p>
   <br />
   <p>
-    <a href="https://www.npmjs.com/package/clover.js"><img src="https://img.shields.io/npm/v/clover.js.svg" alt="npm version" /></a>
-    <a href="https://www.npmjs.com/package/clover.js"><img src="https://img.shields.io/npm/dm/clover.js.svg" alt="npm downloads" /></a>
+    <a href="https://www.npmjs.com/package/cloverly"><img src="https://img.shields.io/npm/v/cloverly.svg" alt="npm version" /></a>
+    <a href="https://www.npmjs.com/package/cloverly"><img src="https://img.shields.io/npm/dm/cloverly.svg" alt="npm downloads" /></a>
   </p>
 </div>
 
-[![npm](https://nodei.co/npm/clover.js.png)](https://www.npmjs.com/package/clover.js)
+[![npm](https://nodei.co/npm/cloverly.png)](https://www.npmjs.com/package/cloverly)
 
 ## Sobre
 
-**Clover.js** es un paquete de [Node.js](https://nodejs.org) creado para el uso de funciones de JavaScript sencillas pero muy utiles para el desarrollo.
+**Cloverly** es un paquete de [Node.js](https://nodejs.org) creado para el uso de funciones de JavaScript sencillas pero muy utiles para el desarrollo.
 <br>
 <br>
 
 ## Instalación
 
 ```sh-session
-npm install clover.js
+npm install cloverly
 ```
 
 <br>
@@ -33,7 +33,7 @@ npm install clover.js
 - El numero en los paréntesis es NECESARIO, define la cantidad de digitos MAXIMOS que tendra el id (La **v1** solo retorna numeros) y si no se define un valor, por defecto tendra **18**
 
 ```js
-const { v1 } = require("clover.js").Id;
+const { v1 } = require("cloverly").Id;
 console.log(v1(9));
 /**
  * Return:
@@ -46,7 +46,7 @@ console.log(v1(9));
 - Lo mismo que la **v1** solo que este incluye letras
 
 ```js
-const { v1 } = require("clover.js").Id;
+const { v1 } = require("cloverly").Id;
 console.log(v1(9));
 /**
  * Return:
@@ -59,7 +59,7 @@ console.log(v1(9));
 - Como dice, convierte **bytes** a **_KB, MB, GB, TB, etc_**
 
 ```js
-const { Size } = require("clover.js");
+const { Size } = require("cloverly");
 console.log(Size(23925278));
 /**
  * Return:
@@ -70,7 +70,7 @@ console.log(Size(23925278));
 - Tambien funciona con variables:
 
 ```js
-const { Size } = require("clover.js");
+const { Size } = require("cloverly");
 let bytes = 45789848;
 console.log(Size(bytes));
 /**
@@ -84,7 +84,7 @@ console.log(Size(bytes));
 - Convierte los datos de fecha en Hora (PM/AM)
 
 ```js
-const format = require("clover.js").Format.v1;
+const format = require("cloverly").Format.v1;
 console.log("Hora:", format(new Date()));
 /**
  * Return:
@@ -97,7 +97,7 @@ console.log("Hora:", format(new Date()));
 - Convierte los datos de fecha en datos locales (Dia, Mes, Año)
 
 ```js
-const format = require("clover.js").Format.v2;
+const format = require("cloverly").Format.v2;
 console.log("Fecha:", format(new Date()));
 /**
  * Return:
@@ -111,7 +111,7 @@ console.log("Fecha:", format(new Date()));
 - Puedes especificar la porción y el total
 
 ```js
-const percent = require("clover.js").Percent;
+const percent = require("cloverly").Percent;
 /**
  * Ejemplo de uso:
  * percent(portion, total);
@@ -124,10 +124,13 @@ console.log(percent(15670, 100000));
  */
 ```
 
+## License
+MIT © [Yasu Yumiko](https://yumiko0828.ml)
+
 ## Enlaces
 
-- [GitHub](https://github.com/Yumiko0828/Clover.js)
-- [npm](https://www.npmjs.com/package/clover.js)
+- [GitHub](https://github.com/Yumiko0828/Cloverly)
+- [npm](https://www.npmjs.com/package/cloverly)
 
 ## This is all :)
 
