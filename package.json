@@ -1,0 +1,32 @@
+{
+  "name": "clover.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yumiko0828/Clover.js.git"
+  },
+  "keywords": [
+    "clover.js",
+    "simple",
+    "utils",
+    "format",
+    "date",
+    "id",
+    "uuid",
+    "percent",
+    "byte",
+    "convert"
+  ],
+  "author": "Yasu Yumiko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yumiko0828/Clover.js/issues"
+  },
+  "homepage": "https://github.com/Yumiko0828/Clover.js#readme"
+}
