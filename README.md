@@ -1,6 +1,6 @@
 # Yutils
 
-[![npm](https://nodei.co/npm/yutil.png)](https://www.npmjs.com/package/yutil)
+[![npm](https://nodei.co/npm/yutil.js.png)](https://www.npmjs.com/package/yutil.js)
 
 ## Sobre
 
@@ -13,14 +13,14 @@ Lo hice lo mas facil posible de usar para que no tengas problemas :D
 ## Instalación
 
 ```sh-session
-npm install yutil
+npm install yutil.js
 ```
 
 <br>
 
 ## Empezar a usar:
 ```js
-const yutil = require("yutil");
+const yutil = require("yutil.js");
 ```
 
 ## Ejemplos de uso:

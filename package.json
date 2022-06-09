@@ -1,5 +1,5 @@
 {
-  "name": "yutil",
+  "name": "yutil.js",
   "version": "1.0.0",
   "description": "A simple package with useful functions for JavaScript",
   "main": "index.js",
