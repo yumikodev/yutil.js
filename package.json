@@ -1,32 +1,28 @@
 {
-  "name": "cloverly",
+  "name": "yutil",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple package with useful functions for JavaScript",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yumiko0828/Cloverly.git"
+    "url": "git+https://github.com/Yumiko0828/Yutil.git"
   },
   "keywords": [
-    "cloverly",
-    "simple",
-    "utils",
-    "format",
-    "date",
-    "id",
+    "Yutil",
+    "Utils",
+    "Bytes",
+    "Convert",
+    "Percent",
+    "Size",
     "uuid",
-    "percent",
-    "byte",
-    "convert"
+    "Format",
+    "Date"
   ],
   "author": "Yasu Yumiko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Yumiko0828/Cloverly/issues"
+    "url": "https://github.com/Yumiko0828/Yutil/issues"
   },
-  "homepage": "https://github.com/Yumiko0828/Cloverly#readme"
+  "homepage": "https://github.com/Yumiko0828/Yutil#readme"
 }

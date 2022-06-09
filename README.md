@@ -1,123 +1,125 @@
-<div align="center">
-  <br />
-  <p>
-    <a href="https://www.npmjs.com/package/aplos"><img src="./docs/cloverly.png" width="546" alt="cloverly" /></a>
-  </p>
-  <br />
-  <p>
-    <a href="https://www.npmjs.com/package/cloverly"><img src="https://img.shields.io/npm/v/cloverly.svg" alt="npm version" /></a>
-    <a href="https://www.npmjs.com/package/cloverly"><img src="https://img.shields.io/npm/dm/cloverly.svg" alt="npm downloads" /></a>
-  </p>
-</div>
+# Yutils
 
-[![npm](https://nodei.co/npm/cloverly.png)](https://www.npmjs.com/package/cloverly)
+[![npm](https://nodei.co/npm/yutil.png)](https://www.npmjs.com/package/yutil)
 
 ## Sobre
 
-**Cloverly** es un paquete de [Node.js](https://nodejs.org) creado para el uso de funciones de JavaScript sencillas pero muy utiles para el desarrollo.
-<br>
+**Yutil** es un paquete de [Node.js](https://nodejs.org) creado con funciones de JavaScript que he llegado a usar mucho y posiblemente tambien te ayuden en tus proyectos.
+
+Lo hice lo mas facil posible de usar para que no tengas problemas :D
+
 <br>
 
 ## Instalación
 
 ```sh-session
-npm install cloverly
+npm install yutil
 ```
 
 <br>
 
-# Ejemplos de uso:
+## Empezar a usar:
+```js
+const yutil = require("yutil");
+```
 
-## ID Generador v1:
+## Ejemplos de uso:
 
-- El numero en los paréntesis es NECESARIO, define la cantidad de digitos MAXIMOS que tendra el id (La **v1** solo retorna numeros) y si no se define un valor, por defecto tendra **18**
+### UUID v1:
+
+Parámetro:
+
+- `length`: define la máxima cantidad de dígitos que tendra el string (por defecto es 18)
 
 ```js
-const { v1 } = require("cloverly").Id;
-console.log(v1(9));
+yutil.uuid.v1(9);
 /**
  * Return:
  * ~$ 205209958
  */
 ```
 
-## ID Generador v2:
+### UUID v2:
 
-- Lo mismo que la **v1** solo que este incluye letras
+- Este incluye letras en el string
 
 ```js
-const { v1 } = require("cloverly").Id;
-console.log(v1(9));
+yutil.uuid.v2(9);
 /**
  * Return:
  * ~$ PZPsKeR5K
  */
 ```
 
-## Convertir **Bytes** a **_KB, MB, GB, TB_**:
+### Abreviar **Bytes** a **KB, MB, GB, TB**:
 
-- Como dice, convierte **bytes** a **_KB, MB, GB, TB, etc_**
+Parámetros:
+
+- `bytes`: los bytes que deseas abreviar.
+- `fixed`: el número de dígitos que aparecerán después del punto decimal, por defecto es 2 pero lo puedes remover estableciendolo en 0.
+
+Con fixed:
 
 ```js
-const { Size } = require("cloverly");
-console.log(Size(23925278));
+yutil.size(23925278);
 /**
  * Return:
  * ~$ 22.82 MB
  */
 ```
 
-- Tambien funciona con variables:
+Sin fixed:
 
 ```js
-const { Size } = require("cloverly");
-let bytes = 45789848;
-console.log(Size(bytes));
+yutil.size(45789848, 0);
 /**
  * Return:
- * ~$ 43.67 MB
+ * ~$ 44 MB
  */
 ```
 
-## Formato de fecha (En Hora):
+### Objeto de fecha a formato de hora:
 
-- Convierte los datos de fecha en Hora (PM/AM)
+Parámetros:
+
+- `date`: el objeto de fecha (ejemplo: `2022-06-08T23:55:13.558Z`)
 
 ```js
-const format = require("cloverly").Format.v1;
-console.log("Hora:", format(new Date()));
+yutil.format.hour("2022-06-08T23:55:13.558Z");
 /**
  * Return:
- * ~$ Hora: 4:33 PM
+ * ~$ Hora: 7:06 PM
  */
 ```
 
-## Formato de fecha (Dia, Mes, Año):
+### Objeto de fecha a formato de fecha:
 
-- Convierte los datos de fecha en datos locales (Dia, Mes, Año)
+- Convierte el objeto de fecha en formato de fecha (Dia / Mes / Año)
 
 ```js
-const format = require("cloverly").Format.v2;
-console.log("Fecha:", format(new Date()));
+yutil.format.date("2022-06-08T23:55:13.558Z");
 /**
  * Return:
- * ~$ Fecha: 29/3/2022
+ * ~$ Fecha: 8/6/2022
  */
 ```
 
-## Convertir a porcentajes:
+### Convertir a porcentajes:
 
-- Convierte los datos especificados en porcentajes (%)
-- Puedes especificar la porción y el total
+Parámetros:
+
+- `portion`: la porción del porcentaje total
+- `total` el total del porcentaje
+- `fixed`: el número de dígitos que aparecerán después del punto decimal, por defecto es 2 pero lo puedes remover estableciendolo en 0.
 
 ```js
-const percent = require("cloverly").Percent;
 /**
- * Ejemplo de uso:
- * percent(portion, total);
+ * Uso:
  */
-
-console.log(percent(15670, 100000));
+yutil.percent(portion, total, fixed);
+```
+```js
+yutil.percent(15670, 100000);
 /**
  * Return:
  * ~$ 15.67%
@@ -125,13 +127,14 @@ console.log(percent(15670, 100000));
 ```
 
 ## License
+
 MIT © [Yasu Yumiko](https://yumiko0828.ml)
 
 ## Enlaces
 
-- [GitHub](https://github.com/Yumiko0828/Cloverly)
-- [npm](https://www.npmjs.com/package/cloverly)
+- [GitHub](https://github.com/Yumiko0828/Yutil)
+- [npm](https://www.npmjs.com/package/Yutil)
 
-## This is all :)
+## Eso es todo =)
 
 Espero te sea util este paquete :D
