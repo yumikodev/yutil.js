@@ -4,8 +4,6 @@
 
 Lo hice lo mas facil posible de usar para que no tengas problemas :D
 
-[![NPM version](https://badge.fury.io/js/yutil.js.svg)](http://badge.fury.io/js/yutil.js)
-[![NPM downloads](https://img.shields.io/npm/dt/yutil.js.svg)](http://badge.fury.io/js/yutil.js)
 [![npm](https://nodei.co/npm/yutil.png)](http://badge.fury.io/js/yutil.js)
 
 <br>
