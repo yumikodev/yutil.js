@@ -1,12 +1,12 @@
 # Yutils
 
-[![npm](https://nodei.co/npm/yutil.js.png)](https://www.npmjs.com/package/yutil.js)
-
-## Sobre
-
 **Yutil** es un paquete de [Node.js](https://nodejs.org) creado con funciones de JavaScript que he llegado a usar mucho y posiblemente tambien te ayuden en tus proyectos.
 
 Lo hice lo mas facil posible de usar para que no tengas problemas :D
+
+[![NPM version](https://badge.fury.io/js/yutil.js.svg)](http://badge.fury.io/js/yutil.js)
+[![NPM downloads](https://img.shields.io/npm/dt/yutil.js.svg)](http://badge.fury.io/js/yutil.js)
+[![npm](https://nodei.co/npm/yutil.png)](http://badge.fury.io/js/yutil.js)
 
 <br>
 
@@ -19,6 +19,7 @@ npm install yutil.js
 <br>
 
 ## Empezar a usar:
+
 ```js
 const yutil = require("yutil.js");
 ```
@@ -118,6 +119,7 @@ Parámetros:
  */
 yutil.percent(portion, total, fixed);
 ```
+
 ```js
 yutil.percent(15670, 100000);
 /**

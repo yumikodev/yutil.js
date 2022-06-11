@@ -1,5 +1,5 @@
 /**
- * Yutil
+ * Yutil.js
  * Copyright(c) 2022 - Yasu Yumiko
  * MIT Licensed
  */
@@ -73,7 +73,7 @@ function hour(date) {
   date = new Date(date);
   let hh = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
   let mm = date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes();
-  let tt = date.getHours() > 12 ? "PM" : "AM";
+  let tt = date.getHours() >= 12 ? "PM" : "AM";
 
   if (!date) throw new Error('you have not defined the "date" parameter');
   return `${hh}:${mm} ${tt}`;
