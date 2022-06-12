@@ -1,12 +1,12 @@
 {
   "name": "yutil.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple package with useful functions for JavaScript",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yumiko0828/yutil.js"
+    "url": "git+https://github.com/Yumiko0828/yutil.js.git"
   },
   "keywords": [
     "Yutil",
@@ -14,6 +14,7 @@
     "Bytes",
     "Convert",
     "Percent",
+    "mstime",
     "Size",
     "uuid",
     "Format",
