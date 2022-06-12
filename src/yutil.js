@@ -66,27 +66,45 @@ function Percent(portion, total, fixed = 2) {
 }
 
 /**
- * @param {Date} date data of type Date.
- * @returns {string} returns the date converted to time.
+ * @param {number} ms The time in milliseconds
  */
-function hour(date) {
+function mstime(ms) {
+  let ts = ms / 1000;
+
+  let years = Math.floor(ts / 31557600);
+  ts %= 31557600;
+  let months = Math.floor(ts / 2629800);
+  ts %= 2629800;
+  let weeks = Math.floor(ts / 604800.02);
+  ts %= 604800.02;
+  let days = Math.floor(ts / 86400);
+  ts %= 86400;
+  let hours = Math.floor(ts / 3600);
+  ts %= 3600;
+  let minutes = Math.floor(ts / 60);
+  let seconds = Math.floor(ts % 60);
+
+  if (!ms) throw new Error('you have not defined the "ms" parameter');
+  return { years, months, weeks, days, hours, minutes, seconds };
+}
+
+/**
+ *
+ * @param {Date} date data of type Date.
+ */
+function format(date) {
   date = new Date(date);
+
   let hh = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
   let mm = date.getMinutes() < 10 ? `0${date.getMinutes()}` : date.getMinutes();
   let tt = date.getHours() >= 12 ? "PM" : "AM";
 
   if (!date) throw new Error('you have not defined the "date" parameter');
-  return `${hh}:${mm} ${tt}`;
-}
 
-/**
- * @param {Date} date Data of type Date.
- * @returns {string} returns the date converted to day, month, year.
- */
-function date(date) {
-  if (!date) throw new Error('you have not defined the "date" parameter');
-  date = new Date(date);
-  return `${date.toLocaleDateString()}`;
+  let $hour = `${hh}:${mm} ${tt}`;
+  let $date = date.toLocaleDateString();
+
+  return { hour: $hour, date: $date };
 }
 
 /**
@@ -98,17 +116,10 @@ const id = {
 };
 
 /**
- * Choose the method of the Format function you want to use (time or date)
- */
-const format = {
-  hour,
-  date,
-};
-
-/**
  * Exports
  */
 exports.uuid = id;
 exports.size = Size;
 exports.percent = Percent;
 exports.format = format;
+exports.mstime = mstime;
