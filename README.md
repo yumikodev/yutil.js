@@ -1,8 +1,8 @@
-# Yutils
+# Yutil.js
 
-**Yutil** es un paquete de [Node.js](https://nodejs.org) creado con funciones de JavaScript que he llegado a usar mucho y posiblemente tambien te ayuden en tus proyectos.
+**Yutil.js** es un paquete de [Node.js](https://nodejs.org) creado con funciones de JavaScript que he llegado a usar mucho y posiblemente tambien te ayuden en tus proyectos.
 
-Lo hice lo mas facil posible de usar para que no tengas problemas :D
+Lo hice lo mas facil posible de usar para que no tengas dificultades al usarlo :D
 
 [![npm](https://nodei.co/npm/yutil.png)](http://badge.fury.io/js/yutil.js)
 
@@ -57,7 +57,7 @@ Parámetros:
 - `bytes`: los bytes que deseas abreviar.
 - `fixed`: el número de dígitos que aparecerán después del punto decimal, por defecto es 2 pero lo puedes remover estableciendolo en 0.
 
-Con fixed:
+Con numero decimal:
 
 ```js
 yutil.size(23925278);
@@ -67,7 +67,7 @@ yutil.size(23925278);
  */
 ```
 
-Sin fixed:
+Sin numero decimal:
 
 ```js
 yutil.size(45789848, 0);
@@ -77,26 +77,58 @@ yutil.size(45789848, 0);
  */
 ```
 
-### Objeto de fecha a formato de hora:
+### Obtener el tiempo equivalente de los milisegundos:
+
+Devuelve un objeto con los todos los equivalentes diponibles
+
+Parámetros:
+
+- `ms`: los milisegundos
+
+Los equivalentes que podemos obtener:
+
+- `years`: años
+- `months`: meses
+- `weeks`: semanas
+- `days`: dias
+- `hours`: horas
+- `minutes`: minutos
+- `seconds`: segundos
+
+Ejemplo simple:
+
+```js
+const { days, hours, minutes, seconds } = yutil.mstime(103957205811);
+
+console.log(`Hace ${days} días, ${hours} horas, ${minutes} minutos y ${seconds} segundos`);
+/**
+ * Return:
+ * ~$ Hace 2 días, 3 horas, 30 minutos y 5 segundos
+ */
+```
+
+### Objeto de fecha a formato de fecha:
+
+En Yutil.js **v1.0.0** y **v1.0.1** eran funciones separadas, ahora son uno solo pero retorna un objeto con las variables `date` y `hour`.
 
 Parámetros:
 
 - `date`: el objeto de fecha (ejemplo: `2022-06-08T23:55:13.558Z`)
 
+Obtener la hora:
+
 ```js
-yutil.format.hour("2022-06-08T23:55:13.558Z");
+yutil.format("2022-06-08T23:55:13.558Z").hour;
 /**
  * Return:
  * ~$ Hora: 7:06 PM
  */
 ```
 
-### Objeto de fecha a formato de fecha:
-
-- Convierte el objeto de fecha en formato de fecha (Dia / Mes / Año)
+Obtener la fecha:
 
 ```js
-yutil.format.date("2022-06-08T23:55:13.558Z");
+yutil.format("2022-06-08T23:55:13.558Z").date;
 /**
  * Return:
  * ~$ Fecha: 8/6/2022
@@ -112,9 +144,7 @@ Parámetros:
 - `fixed`: el número de dígitos que aparecerán después del punto decimal, por defecto es 2 pero lo puedes remover estableciendolo en 0.
 
 ```js
-/**
- * Uso:
- */
+// Uso:
 yutil.percent(portion, total, fixed);
 ```
 
@@ -132,8 +162,8 @@ MIT © [Yasu Yumiko](https://yumiko0828.ml)
 
 ## Enlaces
 
-- [GitHub](https://github.com/Yumiko0828/Yutil)
-- [npm](https://www.npmjs.com/package/Yutil)
+- [GitHub](https://github.com/Yumiko0828/yutil.js)
+- [npm](https://www.npmjs.com/package/yutil.js)
 
 ## Eso es todo =)
 
