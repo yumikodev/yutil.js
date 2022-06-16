@@ -4,7 +4,7 @@
 
 Lo hice lo mas facil posible de usar para que no tengas dificultades al usarlo :D
 
-[![npm](https://nodei.co/npm/yutil.png)](http://badge.fury.io/js/yutil.js)
+[![npm](https://nodei.co/npm/yutil.js.png)](http://badge.fury.io/js/yutil.js)
 
 <br>
 
