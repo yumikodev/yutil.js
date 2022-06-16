@@ -1,6 +1,6 @@
 # Yutil.js
 
-**Yutil.js** es un paquete de [Node.js](https://nodejs.org) creado con funciones de JavaScript que he llegado a usar mucho y posiblemente tambien te ayuden en tus proyectos.
+**Yutil.js** es un paquete de [Node.js](https://nodejs.org) escrito de TypeScript y creado con funciones de JavaScript que he llegado a usar mucho y posiblemente tambien te ayuden en tus proyectos.
 
 Lo hice lo mas facil posible de usar para que no tengas dificultades al usarlo :D
 
