@@ -4,4 +4,4 @@
  * MIT Licensed
  */
 
-module.exports = require("./src/yutil");
+export * from "./yutil";
