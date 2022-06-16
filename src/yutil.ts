@@ -106,3 +106,4 @@ function format(date: Date) {
 // Exports
 const uuid = { v1, v2 }
 export { uuid, format, mstime, percent, size };
+module.exports = { uuid, format, mstime, percent, size };
