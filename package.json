@@ -1,6 +1,6 @@
 {
   "name": "yutil.js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple package written in TypeScript with useful functions for JavaScript",
   "files": [
     "lib/**/*"
@@ -24,7 +24,11 @@
     "Size",
     "uuid",
     "Format",
-    "Date"
+    "Date",
+    "Cipher",
+    "Encrypt",
+    "Decrypt",
+    "crypto"
   ],
   "author": "Yasu Yumiko",
   "license": "MIT",
@@ -33,7 +37,9 @@
   },
   "homepage": "https://github.com/Yumiko0828/yutil.js#readme",
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "typescript": "^4.7.3"
+    "typescript": "4.8.4"
+  },
+  "dependencies": {
+    "@types/node": "18.11.9"
   }
 }
