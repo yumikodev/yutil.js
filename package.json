@@ -1,12 +1,12 @@
 {
   "name": "yutil.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple package written in TypeScript with useful functions for JavaScript",
   "files": [
     "lib/**/*"
   ],
-  "main": "lib/yutil.js",
-  "types": "lib/yutil.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -37,9 +37,9 @@
   },
   "homepage": "https://github.com/Yumiko0828/yutil.js#readme",
   "devDependencies": {
-    "typescript": "4.8.4"
+    "typescript": "5.3.3"
   },
   "dependencies": {
-    "@types/node": "18.11.9"
+    "@types/node": "20.11.16"
   }
 }
