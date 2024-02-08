@@ -1,12 +1,12 @@
 {
   "name": "yutil.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple package written in TypeScript with useful functions for JavaScript",
   "files": [
-    "lib/**/*"
+    "dist/**/*"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
